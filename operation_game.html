@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="assets/light_bulb.svg" type="image/png">
+    <title>RE - Creativity Triggers</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+        integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div id="welcomeCard" class="card mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to (waiting for name)</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, qui alias dicta
+                        minima reprehenderit debitis, cupiditate ad ducimus impedit blanditiis unde eaque odit
+                        recusandae et non nihil numquam quod. Ut vitae sapiente in eaque fugit labore exercitationem
+                        provident architecto, similique veritatis nostrum ratione. Qui animi quas reiciendis delectus
+                        officia nesciunt at. Similique odit corrupti eaque ducimus reprehenderit, omnis quibusdam cumque
+                        unde doloribus, eos recusandae fugit aut laborum quo nemo. Sit esse minus architecto tempora
+                        perspiciatis ut odit quis, ducimus nemo dolorum cum beatae alias quisquam unde error blanditiis?
+                        Ullam quia, animi minima et obcaecati nulla adipisci dolor harum saepe fuga?</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row justify-content-center">
+                        <div class="col-3">
+                            <button class="btn btn-primary btn-block" type="button"
+                                onclick="openPlayerSelectionModal()">Select analysts</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="triggerSelectionCard" class="card mt-5" style="display: none; background-color: #d4eafa; border: 0px;">
+                <div class="card-body">
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="image-container">
+                                    <img src="assets/cloud.png" width="100%" alt="">
+                                    <img id="lightBulb01" onclick="selectTrigger('01')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 10deg;position: absolute; top: 20%;right:17%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb02" onclick="selectTrigger('02')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -10deg;position: absolute; top: 22%;right:27%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb03" onclick="selectTrigger('03')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 15deg;position: absolute; top: 17%;right:37%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb04" onclick="selectTrigger('04')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 12deg;position: absolute; top: 22%;right:47%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb05" onclick="selectTrigger('05')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 0deg;position: absolute; top: 12%;right:57%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb06" onclick="selectTrigger('06')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -8deg;position: absolute; top: 22%;right:67%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb07" onclick="selectTrigger('07')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -10deg;position: absolute; top: 24%;right:77%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb08" onclick="selectTrigger('08')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 5deg;position: absolute; top: 35%;right:84%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb09" onclick="selectTrigger('09')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 10deg;position: absolute; top: 45%;right:20%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb10" onclick="selectTrigger('10')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -10deg;position: absolute; top: 40%;right:30%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb11" onclick="selectTrigger('11')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -12deg;position: absolute; top: 45%;right:40%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb12" onclick="selectTrigger('12')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 12deg;position: absolute; top: 40%;right:50%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb13" onclick="selectTrigger('13')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 13deg;position: absolute; top: 35%;right:60%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb14" onclick="selectTrigger('14')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -10deg;position: absolute; top: 45%;right:70%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb15" onclick="selectTrigger('15')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -7deg;position: absolute; top: 58%;right:77%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb16" onclick="selectTrigger('16')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -11deg;position: absolute; top: 50%;right:88%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb17" onclick="selectTrigger('17')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -10deg;position: absolute; top: 65%;right:15%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb18" onclick="selectTrigger('18')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 15deg;position: absolute; top: 60%;right:35%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb19" onclick="selectTrigger('19')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -2deg;position: absolute; top: 60%;right:50%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb20" onclick="selectTrigger('20')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: -18deg;position: absolute; top: 80%;right:70%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb21" onclick="selectTrigger('21')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 14deg;position: absolute; top: 65%;right:65%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                    <img id="lightBulb22" onclick="selectTrigger('22')" class="light-bulb"
+                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
+                                        style="rotate: 16deg;position: absolute; top: 70%;right:88%;"
+                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-no-padding">
+            <div class="row mt-5">
+                <div class="card player-name-card" id="playerCard1">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo1"><i class="fa fa-user fa-2x user-icon"></i>
+                        </p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard2">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo2"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard3">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo3"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard4">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo4"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard5">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo5"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard6">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo6"><i class="fa fa-user fa-2x user-icon"></i>
+                        </p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="modal fade" id="playerSelectionModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Analysts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        Please write the name of the 6 analyts requested for this project:
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon1">1</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon1"
+                                id="playerName1">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon2">2</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon2"
+                                id="playerName2">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon3">3</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon3"
+                                id="playerName3">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon4">4</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon4"
+                                id="playerName4">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon5">5</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon5"
+                                id="playerName5">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon6">6</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon6"
+                                id="playerName6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mx-5 btn-block" onclick="startGame()">Start
+                    game</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="questionModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Expectation</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="row justify-content-center">
+                            <b>Time left:</b>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div>
+                                <span class="badge badge-warning mx-2 countdown-badge" id="countdown_seconds">0</span>
+                                <span class="badge badge-warning countdown-badge" id="countdown_seconds"
+                                    style="width: 30px !important">.</span>
+                                <span class="badge badge-warning mx-2 countdown-badge" id="countdown_tenths">0</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="wordList">
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <input class="form-control mx-2 mt-auto" type="text" id="orderedSentence"
+                                placeholder="Expectation">
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="row" style="border-left: 1px solid black">
+                            <img id="triggerImage" class="my-1 px-2"
+                                src="assets/creativity_triggers/CreaTriggersFinal3-01.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mx-5 btn-block"
+                    onclick="validateSentence()">Confirm!</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    let countDownDate = new Date().getTime();
+    let currentTurn = 1;
+    let expectation;
+    let interval;
+    
+    const players = {
+        '1': 0,
+        '2': 0,
+        '3': 0,
+        '4': 0,
+        '5': 0,
+        '6': 0,
+    }
+
+    const creativityTriggers = {
+        '01': {
+            name: 'Accessibility',
+            expectations: [{
+                    wordSet: ['un', 'es', 'ejemplo', 'esto'],
+                    answer: 'Esto es un ejemplo',
+                    pending: true
+                },
+                {
+                    wordSet: ['dos', 'numero', 'ejemplo'],
+                    answer: 'ejemplo numero dos',
+                    pending: true
+                }
+            ]
+        },
+        '02': {
+            name: 'Eco-friendly'
+        },
+        '03': {
+            name: 'Portable'
+        },
+        '04': {
+            name: 'Refined'
+        },
+        '05': {
+            name: 'Powerful'
+        },
+        '06': {
+            name: 'Involvement'
+        },
+        '07': {
+            name: 'Ingenious'
+        },
+        '08': {
+            name: 'Attractive'
+        },
+        '09': {
+            name: 'Uncommon'
+        },
+        '10': {
+            name: 'Cohesion'
+        },
+        '11': {
+            name: 'Amusement'
+        },
+        '12': {
+            name: 'Surprising'
+        },
+        '13': {
+            name: 'Smallness'
+        },
+        '14': {
+            name: 'Comfort'
+        },
+        '15': {
+            name: 'Novelty'
+        },
+        '16': {
+            name: 'Technology'
+        },
+        '17': {
+            name: 'Feeling'
+        },
+        '18': {
+            name: 'Independence'
+        },
+        '19': {
+            name: 'Conception'
+        },
+        '20': {
+            name: 'Humerous'
+        },
+        '21': {
+            name: 'Price'
+        },
+        '22': {
+            name: 'Up-to-date'
+        },
+    };
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    updateLightBulbs();
+    updatePlayers();
+
+    function openPlayerSelectionModal() {
+        $('#playerSelectionModal').modal();
+    }
+
+    function selectTrigger(trigger) {
+        $('#questionModal').modal({
+            keyboard: false,
+            backdrop: 'static',
+        });
+        $('#triggerImage').prop('src',
+            `assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png`).show();
+        countDownDate = new Date();
+        countDownDate.setSeconds(countDownDate.getSeconds() + 30);
+        interval = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const tenthsOfASecond = Math.floor((distance % 1000) / 100);
+            $('#countdown_seconds').html(seconds);
+            $('#countdown_tenths').html(tenthsOfASecond);
+            if (distance < 0) {
+                clearInterval(interval);
+                $('#countdown_seconds').html('00');
+                $('#countdown_tenths').html('00');
+                $('#questionModal').modal('hide');
+                Swal.fire({
+                    title: 'Too late!',
+                    icon: 'error',
+                    text: "The stakeholder doesn't have this expectation",
+                });
+                currentTurn++;
+                updatePlayers();
+            }
+        }, 10);
+        setWords(trigger);
+    }
+
+
+
+    function setWords(trigger) {
+        expectation = creativityTriggers[trigger].expectations.find((ex) => ex.pending);
+
+        let wordListHtml = '';
+        for (const word of expectation.wordSet) {
+            wordListHtml += `<li>${word}</li>`
+        }
+
+        $('#wordList').html(wordListHtml);
+    }
+
+    function validateSentence() {
+        clearInterval(interval);
+        if ($('#orderedSentence').val().toUpperCase() === expectation.answer.toUpperCase()) {
+            players[currentTurn%6] += 1;
+            expectation.pending = false;
+            Swal.fire({
+                title: 'Good job!',
+                icon: 'success',
+                text: "The expectation was fulfilled!",
+            });
+        } else {
+            Swal.fire({
+                title: 'Almost!',
+                icon: 'error',
+                text: "The stakeholder expectation wasn't fulfilled!",
+            });
+        }
+        $('#orderedSentence').val('');
+        $('#questionModal').modal('hide');
+        currentTurn++;
+        updateLightBulbs();
+        updatePlayers();
+    }
+
+    function updateLightBulbs() {
+        for (const ct in creativityTriggers) {
+            const hasPending = creativityTriggers[ct].expectations ?
+                creativityTriggers[ct].expectations.find((ex) => ex.pending) :
+                false;
+            if (!hasPending) {
+                $("#lightBulb" + ct).hide();
+            }
+        }
+    }
+
+    function updatePlayers() {
+        $('#playerCard1>.points-row').html('Expectations fulfilled: ' + players['1']);
+        $('#playerCard2>.points-row').html('Expectations fulfilled: ' + players['2']);
+        $('#playerCard3>.points-row').html('Expectations fulfilled: ' + players['3']);
+        $('#playerCard4>.points-row').html('Expectations fulfilled: ' + players['4']);
+        $('#playerCard5>.points-row').html('Expectations fulfilled: ' + players['5']);
+        $('#playerCard6>.points-row').html('Expectations fulfilled: ' + players['6']);
+
+        $('.player-name-card').toggleClass('has-turn', false);
+        $('#playerCard' + currentTurn % 6).toggleClass('has-turn', true);
+    }
+
+    function startGame() {
+        let invalidFields = false;
+        $('#playerSelectionModal input').each(function () {
+            if (!$(this).val() || $(this).val() === '') {
+                invalidFields = true;
+                $(this).toggleClass('is-invalid', true);
+            } else {
+                $(this).toggleClass('is-invalid', false);
+            }
+        });
+        if (invalidFields) {
+            Swal.fire({
+                title: 'Error!',
+                icon: 'error',
+                text: 'Please fill in all the names!',
+            })
+        } else {
+            $('#playerInfo1').append($('#playerName1').val());
+            $('#playerInfo2').append($('#playerName2').val());
+            $('#playerInfo3').append($('#playerName3').val());
+            $('#playerInfo4').append($('#playerName4').val());
+            $('#playerInfo5').append($('#playerName5').val());
+            $('#playerInfo6').append($('#playerName6').val());
+            $('.player-name-card').show();
+            $('#playerSelectionModal').modal('hide');
+            $('#welcomeCard').hide();
+            $('#triggerSelectionCard').show();
+        }
+    }
+
+    $('#playerSelectionModal input').keyup(function () {
+        if (!$(this).val() || $(this).val() === '') {
+            $(this).toggleClass('is-invalid', true);
+        } else {
+            $(this).toggleClass('is-invalid', false);
+        }
+    });
+
+    $('.trigger-item').hover(function () {
+        const id = $(this).attr('id');
+        $('#triggerImage').prop('src',
+            `assets/creativity_triggers/CreaTriggersFinal3-${id.replace('trigger', '')}.png`).show();
+    }, function () {
+        $('#triggerImage').hide();
+    });
+</script>
+
+</html>

@@ -1,0 +1,80 @@
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d4eafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.player-name-card {
+    width: 100%;
+    border-radius: 50px 0 0px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+.has-turn {
+    background-color: #EDD382;
+}
+
+.user-icon {
+    margin: 20px 5px 0px 25px;
+    color: #173753;
+}
+
+.col-no-padding[class*="col-"] {
+    padding-right: 0 !important;
+}
+
+.points-row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 20px;
+    color: rgb(204, 34, 34);
+    font-size: small;
+}
+
+.tooltip-inner {
+    max-width: 390px;
+}
+
+.btn-primary,
+.swal2-styled.swal2-confirm {
+    background-color: #1f77ad !important;
+    border-color: #1f77ad !important;
+}
+
+.btn-primary:hover,
+.swal2-styled.swal2-confirm:hover {
+    background-color: #258ed0 !important;
+    border-color: #258ed0 !important;
+}
+
+.image-container {
+    position: relative;
+}
+
+.light-bulb {
+    transition: 0.2s all;
+}
+
+.light-bulb:hover {
+    width: 6%;
+    transform: translate(6%, -6%);
+}
+
+.countdown-badge {
+    height: 40px;
+    width: 50px;
+    font-size: large;
+    padding-top: 10px;
+    background-color: #2892D7;
+}
+
+#triggerImage {
+    width: 100%;
+}
