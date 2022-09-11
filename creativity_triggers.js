@@ -209,7 +209,7 @@ const creativityTriggers = {
             },
             {
                 wordSet: ['The', 'Content', 'Product', 'Will', 'Have', 'Music'],
-                answer: 'The product will have music content ',
+                answer: 'The product will have music content',
                 pending: true
             }
         ]
@@ -344,7 +344,7 @@ const creativityTriggers = {
             },
             {
                 wordSet: ['The', 'Energy', 'Work', 'With', 'Hydraulic', 'Product', 'Will'],
-                answer: 'The product will work with hydraulic energy ',
+                answer: 'The product will work with hydraulic energy',
                 pending: true
             },
             {
@@ -419,7 +419,7 @@ const creativityTriggers = {
             },
             {
                 wordSet: ['Improve', 'Air', 'Product', 'Quality', 'Will', 'The'],
-                answer: 'The product will improve air quality ',
+                answer: 'The product will improve air quality',
                 pending: true
             },
             {
