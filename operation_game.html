@@ -50,101 +50,137 @@
                     </div>
                 </div>
             </div>
-            <div id="triggerSelectionCard" class="card mt-5" style="display: none; background-color: #d4eafa; border: 0px;">
+            <div id="triggerSelectionCard" class="card hidden-card mt-5">
                 <div class="card-body">
                     <p class="card-text">
                         <div class="row">
                             <div class="col-12">
                                 <div class="image-container">
                                     <img src="assets/cloud.png" width="100%" alt="">
+                                    <img id="finishGameLine" onclick="finishGame()" class="finish-line"
+                                        src="assets/finish.png" alt="Cloud" style=" top: 0%;right:100%;">
                                     <img id="lightBulb01" onclick="selectTrigger('01')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 10deg;position: absolute; top: 20%;right:17%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 10deg; top: 20%;right:17%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb02" onclick="selectTrigger('02')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -10deg;position: absolute; top: 22%;right:27%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -10deg; top: 22%;right:27%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb03" onclick="selectTrigger('03')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 15deg;position: absolute; top: 17%;right:37%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 15deg; top: 17%;right:37%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb04" onclick="selectTrigger('04')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 12deg;position: absolute; top: 22%;right:47%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 12deg; top: 22%;right:47%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb05" onclick="selectTrigger('05')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 0deg;position: absolute; top: 12%;right:57%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 0deg; top: 12%;right:57%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb06" onclick="selectTrigger('06')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -8deg;position: absolute; top: 22%;right:67%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -8deg; top: 22%;right:67%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb07" onclick="selectTrigger('07')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -10deg;position: absolute; top: 24%;right:77%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -10deg; top: 24%;right:77%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb08" onclick="selectTrigger('08')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 5deg;position: absolute; top: 35%;right:84%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 5deg; top: 35%;right:84%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb09" onclick="selectTrigger('09')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 10deg;position: absolute; top: 45%;right:20%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 10deg; top: 45%;right:20%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb10" onclick="selectTrigger('10')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -10deg;position: absolute; top: 40%;right:30%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -10deg; top: 40%;right:30%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb11" onclick="selectTrigger('11')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -12deg;position: absolute; top: 45%;right:40%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -12deg; top: 45%;right:40%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb12" onclick="selectTrigger('12')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 12deg;position: absolute; top: 40%;right:50%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 12deg; top: 40%;right:50%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb13" onclick="selectTrigger('13')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 13deg;position: absolute; top: 35%;right:60%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 13deg; top: 35%;right:60%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb14" onclick="selectTrigger('14')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -10deg;position: absolute; top: 45%;right:70%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -10deg; top: 45%;right:70%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb15" onclick="selectTrigger('15')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -7deg;position: absolute; top: 58%;right:77%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -7deg; top: 58%;right:77%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb16" onclick="selectTrigger('16')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -11deg;position: absolute; top: 50%;right:88%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -11deg; top: 50%;right:88%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb17" onclick="selectTrigger('17')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -10deg;position: absolute; top: 65%;right:15%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -10deg; top: 65%;right:15%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb18" onclick="selectTrigger('18')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 15deg;position: absolute; top: 60%;right:35%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 15deg; top: 60%;right:35%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb19" onclick="selectTrigger('19')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -2deg;position: absolute; top: 60%;right:50%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -2deg; top: 60%;right:50%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb20" onclick="selectTrigger('20')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: -18deg;position: absolute; top: 80%;right:70%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: -18deg; top: 80%;right:70%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb21" onclick="selectTrigger('21')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 14deg;position: absolute; top: 65%;right:65%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 14deg; top: 65%;right:65%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb22" onclick="selectTrigger('22')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb" width="5%"
-                                        style="rotate: 16deg;position: absolute; top: 70%;right:88%;"
-                                        data-toggle="tooltip" data-title="Click to start!" data-placement="right">
+                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        style="rotate: 16deg; top: 70%;right:88%;" data-toggle="tooltip"
+                                        data-title="Click to start!" data-placement="right">
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div id="finishCard" class="card hidden-card">
+                <div class="card-body">
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="firework" style="left: 0%; rotate: 30deg;"></div>
+                                <div class="firework" style="left: 15%;"></div>
+                                <div class="firework" style="left: 30%;"></div>
+                                <div class="firework" style="left: 70%;"></div>
+                                <div class="firework" style="left: 85%;"></div>
+                                <div class="firework" style="left: 100%; rotate: -30deg;"></div>
+                                <div class="image-container text-center">
+                                    <img src="assets/podium.png" style="right: 25%; position: absolute;" width="50%"
+                                        alt="">
+                                    <p style="position: absolute; right: 42.5%; margin-top: 38%; width: 15%;"
+                                        class="text-center" id="scoreName1"></p>
+                                    <p style="position: absolute; right: 59%; margin-top: 45%; width: 13%;"
+                                        class="text-center" id="scoreName2"></p>
+                                    <p style="position: absolute; right: 28%; margin-top: 47%; width: 13%;"
+                                        class="text-center" id="scoreName3"></p>
+
+
+                                    <p style="position: absolute; right: 42.5%; margin-top: 60%; width: 15%;"
+                                        class="text-center" id="scorePoints1"></p>
+                                    <p style="position: absolute; right: 59%; margin-top: 60%; width: 13%;"
+                                        class="text-center" id="scorePoints2"></p>
+                                    <p style="position: absolute; right: 28%; margin-top: 60%; width: 13%;"
+                                        class="text-center" id="scorePoints3"></p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +190,14 @@
         </div>
         <div class="col-md-2 col-no-padding">
             <div class="row mt-5">
-                <div class="card player-name-card" id="playerCard1">
+                <div class="card player-name-card" id="playerCard0">
+                    <div class="row">
+                        <p style="margin-bottom: 0px;" id="playerInfo0"><i class="fa fa-user fa-2x user-icon"></i>
+                        </p>
+                    </div>
+                    <div class="row points-row justify-content-end mr-4"></div>
+                </div>
+                <div class="card player-name-card mt-3" id="playerCard1">
                     <div class="row">
                         <p style="margin-bottom: 0px;" id="playerInfo1"><i class="fa fa-user fa-2x user-icon"></i>
                         </p>
@@ -185,13 +228,6 @@
                     </div>
                     <div class="row points-row justify-content-end mr-4"></div>
                 </div>
-                <div class="card player-name-card mt-3" id="playerCard6">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo6"><i class="fa fa-user fa-2x user-icon"></i>
-                        </p>
-                    </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
-                </div>
             </div>
         </div>
     </div>
@@ -211,45 +247,45 @@
                         Please write the name of the 6 analyts requested for this project:
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon1">1</span>
+                                <span class="input-group-text" id="addon0">1</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon0"
+                                id="playerName0">
+                        </div>
+                        <div class="input-group mb-3 mt-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon1">2</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Name" aria-describedby="addon1"
                                 id="playerName1">
                         </div>
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon2">2</span>
+                                <span class="input-group-text" id="addon2">3</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Name" aria-describedby="addon2"
                                 id="playerName2">
                         </div>
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon3">3</span>
+                                <span class="input-group-text" id="addon3">4</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Name" aria-describedby="addon3"
                                 id="playerName3">
                         </div>
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon4">4</span>
+                                <span class="input-group-text" id="addon4">5</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Name" aria-describedby="addon4"
                                 id="playerName4">
                         </div>
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon5">5</span>
+                                <span class="input-group-text" id="addon5">6</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Name" aria-describedby="addon5"
                                 id="playerName5">
-                        </div>
-                        <div class="input-group mb-3 mt-2">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="addon6">6</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Name" aria-describedby="addon6"
-                                id="playerName6">
                         </div>
                     </div>
                 </div>
@@ -309,18 +345,37 @@
 <script src="creativity_triggers.js"></script>
 <script type="text/javascript">
     let countDownDate = new Date().getTime();
-    let currentTurn = 1;
+    let currentTurn = 0;
     let expectation;
     let interval;
-    
-    const players = {
-        '1': 0,
-        '2': 0,
-        '3': 0,
-        '4': 0,
-        '5': 0,
-        '6': 0,
-    }
+
+    const players = [{
+            name: '',
+            score: 0
+        },
+        {
+            name: '',
+            score: 0
+        },
+        {
+            name: '',
+            score: 0
+        },
+        {
+            name: '',
+            score: 0
+        },
+        {
+            name: '',
+            score: 0
+        },
+        {
+            name: '',
+            score: 0
+        }
+    ];
+
+
 
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -358,7 +413,7 @@
                 Swal.fire({
                     title: 'Too late!',
                     icon: 'error',
-                    text: "The stakeholder doesn't have this expectation",
+                    text: "The stakeholder expectation wasn't fulfilled",
                 });
                 currentTurn++;
                 updatePlayers();
@@ -383,7 +438,7 @@
     function validateSentence() {
         clearInterval(interval);
         if ($('#orderedSentence').val().toUpperCase() === expectation.answer.toUpperCase()) {
-            players[currentTurn%6] += 1;
+            players[currentTurn % 6].score += 1;
             expectation.pending = false;
             Swal.fire({
                 title: 'Good job!',
@@ -416,12 +471,12 @@
     }
 
     function updatePlayers() {
-        $('#playerCard1>.points-row').html('Expectations fulfilled: ' + players['1']);
-        $('#playerCard2>.points-row').html('Expectations fulfilled: ' + players['2']);
-        $('#playerCard3>.points-row').html('Expectations fulfilled: ' + players['3']);
-        $('#playerCard4>.points-row').html('Expectations fulfilled: ' + players['4']);
-        $('#playerCard5>.points-row').html('Expectations fulfilled: ' + players['5']);
-        $('#playerCard6>.points-row').html('Expectations fulfilled: ' + players['6']);
+        $('#playerCard0>.points-row').html('Expectations fulfilled: ' + players[0].score);
+        $('#playerCard1>.points-row').html('Expectations fulfilled: ' + players[1].score);
+        $('#playerCard2>.points-row').html('Expectations fulfilled: ' + players[2].score);
+        $('#playerCard3>.points-row').html('Expectations fulfilled: ' + players[3].score);
+        $('#playerCard4>.points-row').html('Expectations fulfilled: ' + players[4].score);
+        $('#playerCard5>.points-row').html('Expectations fulfilled: ' + players[5].score);
 
         $('.player-name-card').toggleClass('has-turn', false);
         $('#playerCard' + currentTurn % 6).toggleClass('has-turn', true);
@@ -444,17 +499,43 @@
                 text: 'Please fill in all the names!',
             })
         } else {
+            $('#playerInfo0').append($('#playerName0').val());
             $('#playerInfo1').append($('#playerName1').val());
             $('#playerInfo2').append($('#playerName2').val());
             $('#playerInfo3').append($('#playerName3').val());
             $('#playerInfo4').append($('#playerName4').val());
             $('#playerInfo5').append($('#playerName5').val());
-            $('#playerInfo6').append($('#playerName6').val());
+
+            players[0].name = $('#playerName0').val();
+            players[1].name = $('#playerName1').val();
+            players[2].name = $('#playerName2').val();
+            players[3].name = $('#playerName3').val();
+            players[4].name = $('#playerName4').val();
+            players[5].name = $('#playerName5').val();
+
             $('.player-name-card').show();
             $('#playerSelectionModal').modal('hide');
             $('#welcomeCard').hide();
             $('#triggerSelectionCard').show();
         }
+    }
+
+    function finishGame() {
+        $('.player-name-card').hide();
+        $('#triggerSelectionCard').hide();
+
+        const sortedPlayers = players.sort((a, b) => {
+            return b.score - a.score;
+        });
+
+        $('#scoreName1').html('<b>' + sortedPlayers[0].name + '</b>');
+        $('#scoreName2').html('<b>' + sortedPlayers[1].name + '</b>');
+        $('#scoreName3').html('<b>' + sortedPlayers[2].name + '</b>');
+        $('#scorePoints1').html('<b>Expectations: ' + sortedPlayers[0].score + '</b>');
+        $('#scorePoints2').html('<b>Expectations: ' + sortedPlayers[1].score + '</b>');
+        $('#scorePoints3').html('<b>Expectations: ' + sortedPlayers[2].score + '</b>');
+
+        $('#finishCard').show(200);
     }
 
     $('#playerSelectionModal input').keyup(function () {

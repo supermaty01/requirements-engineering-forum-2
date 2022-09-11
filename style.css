@@ -7,13 +7,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d4eafa;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1;
 }
 
 .player-name-card {
     width: 100%;
     border-radius: 50px 0 0px 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: none;
 }
 
@@ -60,11 +59,24 @@ body {
 
 .light-bulb {
     transition: 0.2s all;
+    width: 5.5%;
+    position: absolute;
 }
 
 .light-bulb:hover {
-    width: 6%;
-    transform: translate(6%, -6%);
+    width: 6.5%;
+    transform: translate(7%, -7%);
+}
+
+.finish-line {
+    transition: 0.2s all;
+    position: absolute;
+    width: 12%;
+}
+
+.finish-line:hover {
+    width: 14%;
+    transform: translate(7%, -7%);
 }
 
 .countdown-badge {
@@ -77,4 +89,80 @@ body {
 
 #triggerImage {
     width: 100%;
+}
+
+.hidden-card {
+    display: none;
+    background-color: #d4eafa;
+    border: 0px;
+}
+
+@keyframes firework {
+    0% {
+        transform: translate(-50%, 60vh);
+        width: 2vmin;
+        opacity: 1;
+    }
+
+    30% {
+        width: 2vmin;
+        opacity: 1;
+    }
+
+    100% {
+        width: 60vmin;
+        opacity: 0;
+    }
+}
+
+.firework,
+.firework::before,
+.firework::after {
+    --top: 60vh;
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0.5vmin;
+    aspect-ratio: 1;
+    background:
+        /* random backgrounds */
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 50% 00%,
+        radial-gradient(circle, rgb(187, 255, 0) 1vmin, #0000 0) 00% 50%,
+        radial-gradient(circle, rgb(4, 0, 255) 1vmin, #0000 0) 50% 99%,
+        radial-gradient(circle, rgb(197, 29, 169) 1vmin, #0000 0) 99% 50%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 80% 90%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 95% 90%,
+        radial-gradient(circle, rgb(102, 255, 0) 1vmin, #0000 0) 10% 60%,
+        radial-gradient(circle, rgb(255, 136, 0) 1vmin, #0000 0) 31% 80%,
+        radial-gradient(circle, rgb(49, 0, 0) 1vmin, #0000 0) 80% 10%,
+        radial-gradient(circle, rgb(58, 5, 0) 1vmin, #0000 0) 90% 23%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 45% 20%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 18% 24%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 58% 00%,
+        radial-gradient(circle, rgb(187, 255, 0) 1vmin, #0000 0) 08% 50%,
+        radial-gradient(circle, rgb(4, 0, 255) 1vmin, #0000 0) 58% 99%,
+        radial-gradient(circle, rgb(197, 29, 169) 1vmin, #0000 0) 89% 50%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 88% 90%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 65% 90%,
+        radial-gradient(circle, rgb(102, 255, 0) 1vmin, #0000 0) 18% 60%,
+        radial-gradient(circle, rgb(255, 136, 0) 1vmin, #0000 0) 21% 80%,
+        radial-gradient(circle, rgb(49, 0, 0) 1vmin, #0000 0) 40% 10%,
+        radial-gradient(circle, rgb(58, 5, 0) 1vmin, #0000 0) 90% 23%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 45% 20%,
+        radial-gradient(circle, rgb(255, 21, 0) 1vmin, #0000 0) 13% 24%;
+    background-size: 5vmin 5vmin;
+    background-repeat: no-repeat;
+    animation: firework 2s infinite;
+}
+
+.firework::before {
+    transform: translate(-50%, -50%) rotate(25deg) !important;
+}
+
+.firework::after {
+    transform: translate(-50%, -50%) rotate(-37deg) !important;
+}
+
+.firework {
+    top: 0%;
 }
