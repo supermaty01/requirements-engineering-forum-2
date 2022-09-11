@@ -422,8 +422,6 @@
         setWords(trigger);
     }
 
-
-
     function setWords(trigger) {
         expectation = creativityTriggers[trigger].expectations.find((ex) => ex.pending);
 
@@ -546,13 +544,6 @@
         }
     });
 
-    $('.trigger-item').hover(function () {
-        const id = $(this).attr('id');
-        $('#triggerImage').prop('src',
-            `assets/creativity_triggers/CreaTriggersFinal3-${id.replace('trigger', '')}.png`).show();
-    }, function () {
-        $('#triggerImage').hide();
-    });
 </script>
 
 </html>
