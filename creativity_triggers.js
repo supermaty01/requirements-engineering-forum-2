@@ -28,8 +28,8 @@ const creativityTriggers = {
                 pending: true
             },
             {
-                wordSet: ['Consumption', 'Webpage', 'Energy', 'The', 'The', 'To', 'Order', 'In', 'Optimize', 'Reduce'],
-                answer: 'Optimize the webpage in order to reduce the energy consumption',
+                wordSet: ['Consumption', 'Website', 'Energy', 'The', 'The', 'To', 'Order', 'In', 'Optimize', 'Reduce'],
+                answer: 'Optimize the Website in order to reduce the energy consumption',
                 pending: true
             },
             {
@@ -63,13 +63,13 @@ const creativityTriggers = {
         name: 'Refined',
         expectations: [
             {
-                wordSet: ['Website', 'The', 'Has', 'A', 'Light', 'Palette.', 'Color'],
-                answer: 'The website has a light color palette.',
+                wordSet: ['Website', 'The', 'Has', 'A', 'Light', 'Palette', 'Color'],
+                answer: 'The website has a light color palette',
                 pending: true
             },
             {
-                wordSet: ['Must', 'The', 'Dynamic', 'A', 'Have', 'Website', 'Transition.', 'Page'],
-                answer: 'The website must have a dynamic page transition.',
+                wordSet: ['Must', 'The', 'Dynamic', 'A', 'Have', 'Website', 'Transition', 'Page'],
+                answer: 'The website must have a dynamic page transition',
                 pending: true
             },
             {
@@ -103,8 +103,8 @@ const creativityTriggers = {
         name: 'Involvement',
         expectations: [
             {
-                wordSet: ['Have', 'The', 'User', 'Recommendations.', 'Will', 'Section', 'Website', 'A', 'For'],
-                answer: 'The website will have a section for user recommendations.',
+                wordSet: ['Have', 'The', 'User', 'Recommendations', 'Will', 'Section', 'Website', 'A', 'For'],
+                answer: 'The website will have a section for user recommendations',
                 pending: true
             },
             {
@@ -113,8 +113,8 @@ const creativityTriggers = {
                 pending: true
             },
             {
-                wordSet: ['Users', 'And', 'Products', 'Of', 'Can', 'Provide', 'Reviews', 'Services.'],
-                answer: 'Users can provide reviews of products and services.',
+                wordSet: ['Users', 'And', 'Products', 'Of', 'Can', 'Provide', 'Reviews', 'Services'],
+                answer: 'Users can provide reviews of products and services',
                 pending: true
             }
         ]
@@ -143,8 +143,8 @@ const creativityTriggers = {
         name: 'Attractive',
         expectations: [
             {
-                wordSet: ['An', 'The', 'Will', 'Color', 'Eye-catching', 'Palette.', 'Have', 'Website'],
-                answer: 'The website will have an eye-catching color palette.',
+                wordSet: ['An', 'The', 'Will', 'Color', 'Eye-catching', 'Palette', 'Have', 'Website'],
+                answer: 'The website will have an eye-catching color palette',
                 pending: true
             },
             {
@@ -163,13 +163,13 @@ const creativityTriggers = {
         name: 'Uncommon',
         expectations: [
             {
-                wordSet: ['Figures.', 'Three-dimensional', 'The', 'Will', 'Product', 'Manufacture'],
-                answer: 'The product will manufacture three-dimensional figures.',
+                wordSet: ['Figures', 'Three-dimensional', 'The', 'Will', 'Product', 'Manufacture'],
+                answer: 'The product will manufacture three-dimensional figures',
                 pending: true
             },
             {
-                wordSet: ['Product', 'The', 'Control', 'Will', 'Phone', 'The', 'Remotely'],
-                answer: 'The product will remotely control the phone',
+                wordSet: ['Product', 'The', 'Control', 'Will', 'Phone', 'The'],
+                answer: 'The product will control the phone',
                 pending: true
             }
         ]
@@ -178,13 +178,13 @@ const creativityTriggers = {
         name: 'Cohesion',
         expectations: [
             {
-                wordSet: ['Displays', 'Tracking', 'Page', 'Order', 'The', 'The'],
-                answer: 'The page displays the order tracking',
+                wordSet: ['Displays', 'Tracking', 'Website', 'Order', 'The', 'The'],
+                answer: 'The website displays the order tracking',
                 pending: true
             },
             {
-                wordSet: ['The', 'A', 'Of', 'Code', 'Tracking', 'Provide', 'Status', 'Will', 'The', 'Visualize', 'The', 'To', 'Page', 'Order.'],
-                answer: 'The page will provide a tracking code to visualize the status of the order.',
+                wordSet: ['The', 'A', 'Of', 'Code', 'Tracking', 'Provide', 'Status', 'Will', 'The', 'Visualize', 'The', 'To', 'Website', 'Order'],
+                answer: 'The Website will provide a tracking code to visualize the status of the order',
                 pending: true
             },
             {
@@ -203,8 +203,8 @@ const creativityTriggers = {
                 pending: true
             },
             {
-                wordSet: ['Entertainment', 'Page', 'Have', 'The', 'Content', 'Will'],
-                answer: 'The page will have entertainment content',
+                wordSet: ['Entertainment', 'Website', 'Have', 'The', 'Content', 'Will'],
+                answer: 'The Website will have entertainment content',
                 pending: true
             },
             {
@@ -218,13 +218,13 @@ const creativityTriggers = {
         name: 'Surprising',
         expectations: [
             {
-                wordSet: ['Images', 'From', 'Generate', 'The', 'Page', 'Words', 'Will'],
-                answer: 'The page will generate images from words',
+                wordSet: ['Images', 'From', 'Generate', 'The', 'Website', 'Words', 'Will'],
+                answer: 'The Website will generate images from words',
                 pending: true
             },
             {
-                wordSet: ['From', 'Text', 'A', 'Generate', 'Page', 'Summary', 'Will'],
-                answer: 'Page will generate a summary from text',
+                wordSet: ['From', 'Text', 'A', 'Generate', 'Website', 'Summary', 'Will'],
+                answer: 'Website will generate a summary from text',
                 pending: true
             },
             {
@@ -288,8 +288,8 @@ const creativityTriggers = {
                 pending: true
             },
             {
-                wordSet: ['Will', 'Recognition.', 'Have', 'Device', 'The', 'Fingerprint'],
-                answer: 'The device will have fingerprint recognition.',
+                wordSet: ['Will', 'Recognition', 'Have', 'Device', 'The', 'Fingerprint'],
+                answer: 'The device will have fingerprint recognition',
                 pending: true
             }
         ]
@@ -358,8 +358,8 @@ const creativityTriggers = {
         name: 'Conception',
         expectations: [
             {
-                wordSet: ['A', 'Artist', 'The', 'Create', 'Famous', 'To', 'Background', 'Hire', 'Image.'],
-                answer: 'Hire a famous artist to create the background image.',
+                wordSet: ['A', 'Artist', 'The', 'Create', 'Famous', 'To', 'Background', 'Hire', 'Image'],
+                answer: 'Hire a famous artist to create the background image',
                 pending: true
             },
             {
