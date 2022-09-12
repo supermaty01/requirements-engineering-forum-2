@@ -396,7 +396,7 @@
         $('#triggerImage').prop('src',
             `assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png`).show();
         countDownDate = new Date();
-        countDownDate.setSeconds(countDownDate.getSeconds() + 30);
+        countDownDate.setSeconds(countDownDate.getSeconds() + 60);
         interval = setInterval(function () {
             const now = new Date().getTime();
             const distance = countDownDate - now;
