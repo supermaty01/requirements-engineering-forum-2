@@ -416,6 +416,7 @@
                     text: "The stakeholder expectation wasn't fulfilled",
                 });
                 currentTurn++;
+                $('#orderedSentence').val('');
                 updatePlayers();
             }
         }, 10);
@@ -543,7 +544,6 @@
             $(this).toggleClass('is-invalid', false);
         }
     });
-
 </script>
 
 </html>
