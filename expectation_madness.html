@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" href="assets/light_bulb.svg" type="image/png">
-    <title>RE - Creativity Triggers</title>
+    <title>Expectation Madness</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -29,17 +29,63 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <div id="welcomeCard" class="card mt-5">
+            <div id="welcomeCard" class="card my-5">
                 <div class="card-body">
-                    <h5 class="card-title">Welcome to (waiting for name)</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, qui alias dicta
-                        minima reprehenderit debitis, cupiditate ad ducimus impedit blanditiis unde eaque odit
-                        recusandae et non nihil numquam quod. Ut vitae sapiente in eaque fugit labore exercitationem
-                        provident architecto, similique veritatis nostrum ratione. Qui animi quas reiciendis delectus
-                        officia nesciunt at. Similique odit corrupti eaque ducimus reprehenderit, omnis quibusdam cumque
-                        unde doloribus, eos recusandae fugit aut laborum quo nemo. Sit esse minus architecto tempora
-                        perspiciatis ut odit quis, ducimus nemo dolorum cum beatae alias quisquam unde error blanditiis?
-                        Ullam quia, animi minima et obcaecati nulla adipisci dolor harum saepe fuga?</p>
+                    <h1 class="card-title" style="font-size: 35pt;"><img id="lightBulb01" src="assets/light_bulb.svg"
+                            alt="Light bulb" width="45pt" style="vertical-align: top; margin-top: 5pt;">Welcome to
+                        Expectation Madness!<img id="lightBulb01" src="assets/light_bulb.svg" alt="Light bulb"
+                            width="45pt" style="vertical-align: top; margin-top: 5pt;"></h1>
+                    <p class="card-text">
+                        <p>
+                            In this game you are requirements analysts capturing the expectations of the
+                            project
+                            stakeholder. A meeting will be held where the
+                            you will compete against each other to get the job.
+                        </p>
+                        <p><b><u>Rules:</u></b></p>
+                        <ol>
+                            <li class="my-1">The stakeholder meeting will begin when all analysts introduce themselves.
+                                After this, one analyst will present one creativity trigger card at a time, this will be
+                                done in the order in which they were introduced</li>
+                            <li class="my-1">When an analyst presents a creativity trigger card to the stakeholder, the
+                                stakeholder will immediately say the collection of concepts corresponding to that
+                                innovation topic.</li>
+                            <li class="my-1">After the stakeholder says the collection of concepts, the analyst has only
+                                thirty (30) seconds to form a structured expectation based on these concepts. If the
+                                analyst does not form the expectation, it is up to the next analyst to decide what
+                                creativity trigger card to present to the stakeholder.</li>
+                            <li class="my-1">The analyst must use all the concepts to form the structured expectation
+                            </li>
+                            <li class="my-1">After the analyst forms the expectation, the stakeholder will tell you
+                                whether or not he/she is satisfied with it. If the stakeholder is satisfied, the
+                                expectation will be considered to have been captured correctly and will be assigned to
+                                the analyst. After this, another analyst will decide what creativity trigger card to
+                                present to the analyst</li>
+                            <li class="my-1">When an expectation is captured, the collection of concepts associated with
+                                this expectation will no longer be said by the stakeholder.</li>
+                            <li class="my-1">If the analyst cannot capture the expectation correctly, its concept
+                                collection associated may be said again by the stakeholder.</li>
+                            <li class="my-1">Each creativity trigger will foster a maximum of 3 concept collections in
+                                the stakeholder, once the associated expectations have been captured, the creativity
+                                trigger card cannot be chosen again.</li>
+                        </ol>
+                        <p><b><u>Instructions:</u></b></p>
+                        <ol>
+                            <li class="my-1">Click the "Select analyst" button to begin the game.</li>
+                            <li class="my-1">The analyst marked with orange color in the right side of the screen has
+                                the turn.</li>
+                            <li class="my-1">The analyst with the turn must click on a light bulb to display a
+                                creativity trigger.</li>
+                            <li class="my-1">Once the analyst have finished reading the creativity trigger, must click
+                                the "Ready!" button.</li>
+                            <li class="my-1">The analyst has 30 seconds to reorder the
+                                words and write them down on the "Expectation" field.</li>
+                            <li class="my-1">Finish the game by clicking on the finish line on the top left of the
+                                screen</li>
+                        </ol>
+                        <p><b><u>Winner Selection Criteria:</u></b></p>
+                        <p>The analyst with the most expectations is the winner.</p>
+                    </p>
                 </div>
                 <div class="card-footer">
                     <div class="row justify-content-center">
@@ -244,7 +290,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-12">
-                        Please write the name of the 6 analyts requested for this project:
+                        Please write the name of the 6 analyts:
                         <div class="input-group mb-3 mt-2">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="addon0">1</span>
@@ -292,7 +338,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary mx-5 btn-block" onclick="startGame()">Start
-                    game</button>
+                    meeting</button>
             </div>
         </div>
     </div>
@@ -375,8 +421,6 @@
         }
     ];
 
-
-
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
@@ -389,6 +433,19 @@
     }
 
     function selectTrigger(trigger) {
+        Swal.fire({
+            html: `<img width="80%" class="my-1 px-2" src="assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png">`,
+            confirmButtonText: 'Ready!',
+            allowEscapeKey: false,
+            allowOutsideClick: false,
+        }).then((result) => {
+            if (result) {
+                openGameModal(trigger);
+            }
+        });
+    }
+
+    function openGameModal(trigger) {
         $('#questionModal').modal({
             keyboard: false,
             backdrop: 'static',
@@ -396,7 +453,7 @@
         $('#triggerImage').prop('src',
             `assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png`).show();
         countDownDate = new Date();
-        countDownDate.setSeconds(countDownDate.getSeconds() + 60);
+        countDownDate.setSeconds(countDownDate.getSeconds() + 30);
         interval = setInterval(function () {
             const now = new Date().getTime();
             const distance = countDownDate - now;
@@ -413,7 +470,7 @@
                 Swal.fire({
                     title: 'Too late!',
                     icon: 'error',
-                    text: "The stakeholder expectation wasn't fulfilled",
+                    text: "The stakeholder expectation wasn't captured",
                 });
                 currentTurn++;
                 $('#orderedSentence').val('');
@@ -442,13 +499,13 @@
             Swal.fire({
                 title: 'Good job!',
                 icon: 'success',
-                text: "The expectation was fulfilled!",
+                text: "The expectation was captured!",
             });
         } else {
             Swal.fire({
                 title: 'Almost!',
                 icon: 'error',
-                text: "The stakeholder expectation wasn't fulfilled!",
+                text: "The stakeholder expectation wasn't captured!",
             });
         }
         $('#orderedSentence').val('');
@@ -470,12 +527,12 @@
     }
 
     function updatePlayers() {
-        $('#playerCard0>.points-row').html('Expectations fulfilled: ' + players[0].score);
-        $('#playerCard1>.points-row').html('Expectations fulfilled: ' + players[1].score);
-        $('#playerCard2>.points-row').html('Expectations fulfilled: ' + players[2].score);
-        $('#playerCard3>.points-row').html('Expectations fulfilled: ' + players[3].score);
-        $('#playerCard4>.points-row').html('Expectations fulfilled: ' + players[4].score);
-        $('#playerCard5>.points-row').html('Expectations fulfilled: ' + players[5].score);
+        $('#playerCard0>.points-row').html('Expectations captured: ' + players[0].score);
+        $('#playerCard1>.points-row').html('Expectations captured: ' + players[1].score);
+        $('#playerCard2>.points-row').html('Expectations captured: ' + players[2].score);
+        $('#playerCard3>.points-row').html('Expectations captured: ' + players[3].score);
+        $('#playerCard4>.points-row').html('Expectations captured: ' + players[4].score);
+        $('#playerCard5>.points-row').html('Expectations captured: ' + players[5].score);
 
         $('.player-name-card').toggleClass('has-turn', false);
         $('#playerCard' + currentTurn % 6).toggleClass('has-turn', true);

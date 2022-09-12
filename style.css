@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d4eafa;
-    line-height: 1;
 }
 
 .player-name-card {
@@ -94,6 +93,7 @@ body {
 .hidden-card {
     display: none;
     background-color: #d4eafa;
+    line-height: 1;
     border: 0px;
 }
 

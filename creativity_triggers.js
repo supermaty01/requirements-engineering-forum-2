@@ -348,8 +348,8 @@ const creativityTriggers = {
                 pending: true
             },
             {
-                wordSet: ['Have', 'Website', 'Microservices', 'The', 'Won’t'],
-                answer: 'The website won’t have microservices',
+                wordSet: ['Have', 'Website', 'Microservices', 'Not', 'The', 'Will'],
+                answer: 'The website will not have microservices',
                 pending: true
             }
         ]
