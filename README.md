@@ -1,5 +1,7 @@
 # Expectation Madness
 
+IMPORTANT: Internet connection is required to start the game.
+
 Created by:
 - Group 03 Requirements Engineering 2022-2S.
 
