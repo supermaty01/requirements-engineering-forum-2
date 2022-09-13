@@ -5,24 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon" href="assets/light_bulb.svg" type="image/png">
+    <link rel="icon" href="public/assets/light_bulb.svg" type="image/png">
     <title>Expectation Madness</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
-        integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <script src="public/javascript/jquery-3.3.1.slim.min.js"></script>
+    <script src="public/javascript/popper.min.js"></script>
+    <script src="public/javascript/bootstrap.min.js"></script>
+    <script src="public/javascript/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="public/stylesheets/style.css">
 </head>
 
 <body>
@@ -31,9 +21,10 @@
         <div class="col-md-8">
             <div id="welcomeCard" class="card my-5">
                 <div class="card-body">
-                    <h1 class="card-title" style="font-size: 35pt;"><img id="lightBulb01" src="assets/light_bulb.svg"
-                            alt="Light bulb" width="45pt" style="vertical-align: top; margin-top: 5pt;">Welcome to
-                        Expectation Madness!<img id="lightBulb01" src="assets/light_bulb.svg" alt="Light bulb"
+                    <h1 class="card-title" style="font-size: 35pt;"><img id="lightBulb01"
+                            src="public/assets/light_bulb.svg" alt="Light bulb" width="45pt"
+                            style="vertical-align: top; margin-top: 5pt;">Welcome to
+                        Expectation Madness!<img id="lightBulb01" src="public/assets/light_bulb.svg" alt="Light bulb"
                             width="45pt" style="vertical-align: top; margin-top: 5pt;"></h1>
                     <p class="card-text">
                         <p>
@@ -102,95 +93,95 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="image-container">
-                                    <img src="assets/cloud.png" width="100%" alt="">
+                                    <img src="public/assets/cloud.png" width="100%" alt="">
                                     <img id="finishGameLine" onclick="finishGame()" class="finish-line"
-                                        src="assets/finish.png" alt="Cloud" style=" top: 0%;right:100%;">
+                                        src="public/assets/finish.png" alt="Cloud" style=" top: 0%;right:100%;">
                                     <img id="lightBulb01" onclick="selectTrigger('01')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 10deg; top: 20%;right:17%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb02" onclick="selectTrigger('02')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -10deg; top: 22%;right:27%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb03" onclick="selectTrigger('03')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 15deg; top: 17%;right:37%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb04" onclick="selectTrigger('04')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 12deg; top: 22%;right:47%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb05" onclick="selectTrigger('05')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 0deg; top: 12%;right:57%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb06" onclick="selectTrigger('06')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -8deg; top: 22%;right:67%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb07" onclick="selectTrigger('07')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -10deg; top: 24%;right:77%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb08" onclick="selectTrigger('08')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 5deg; top: 35%;right:84%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb09" onclick="selectTrigger('09')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 10deg; top: 45%;right:20%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb10" onclick="selectTrigger('10')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -10deg; top: 40%;right:30%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb11" onclick="selectTrigger('11')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -12deg; top: 45%;right:40%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb12" onclick="selectTrigger('12')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 12deg; top: 40%;right:50%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb13" onclick="selectTrigger('13')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 13deg; top: 35%;right:60%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb14" onclick="selectTrigger('14')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -10deg; top: 45%;right:70%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb15" onclick="selectTrigger('15')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -7deg; top: 58%;right:77%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb16" onclick="selectTrigger('16')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -11deg; top: 50%;right:88%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb17" onclick="selectTrigger('17')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -10deg; top: 65%;right:15%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb18" onclick="selectTrigger('18')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 15deg; top: 60%;right:35%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb19" onclick="selectTrigger('19')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -2deg; top: 60%;right:50%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb20" onclick="selectTrigger('20')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: -18deg; top: 80%;right:70%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb21" onclick="selectTrigger('21')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 14deg; top: 65%;right:65%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                     <img id="lightBulb22" onclick="selectTrigger('22')" class="light-bulb"
-                                        src="assets/light_bulb.svg" alt="Light bulb"
+                                        src="public/assets/light_bulb.svg" alt="Light bulb"
                                         style="rotate: 16deg; top: 70%;right:88%;" data-toggle="tooltip"
                                         data-title="Click to start!" data-placement="right">
                                 </div>
@@ -211,8 +202,8 @@
                                 <div class="firework" style="left: 85%;"></div>
                                 <div class="firework" style="left: 100%; rotate: -30deg;"></div>
                                 <div class="image-container text-center">
-                                    <img src="assets/podium.png" style="right: 25%; position: absolute;" width="50%"
-                                        alt="">
+                                    <img src="public/assets/podium.png" style="right: 25%; position: absolute;"
+                                        width="50%" alt="">
                                     <p style="position: absolute; right: 42.5%; margin-top: 38%; width: 15%;"
                                         class="text-center" id="scoreName1"></p>
                                     <p style="position: absolute; right: 59%; margin-top: 45%; width: 13%;"
@@ -237,42 +228,46 @@
         <div class="col-md-2 col-no-padding">
             <div class="row mt-5">
                 <div class="card player-name-card" id="playerCard0">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo0"><i class="fa fa-user fa-2x user-icon"></i>
-                        </p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo0"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
                 <div class="card player-name-card mt-3" id="playerCard1">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo1"><i class="fa fa-user fa-2x user-icon"></i>
-                        </p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo1"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
                 <div class="card player-name-card mt-3" id="playerCard2">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo2"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo2"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
                 <div class="card player-name-card mt-3" id="playerCard3">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo3"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo3"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
                 <div class="card player-name-card mt-3" id="playerCard4">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo4"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo4"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
                 <div class="card player-name-card mt-3" id="playerCard5">
-                    <div class="row">
-                        <p style="margin-bottom: 0px;" id="playerInfo5"><i class="fa fa-user fa-2x user-icon"></i></p>
+                    <div class="row" style="height: 100%; margin-right: 0px;">
+                        <img class="user-icon align-middle" src="public/assets/user.svg" alt="">
+                        <p class="name-text" id="playerInfo5"></p>
                     </div>
-                    <div class="row points-row justify-content-end mr-4"></div>
+                    <div class="row points-row justify-content-end mr-3"></div>
                 </div>
             </div>
         </div>
@@ -376,7 +371,7 @@
                     <div class="col-5">
                         <div class="row" style="border-left: 1px solid black">
                             <img id="triggerImage" class="my-1 px-2"
-                                src="assets/creativity_triggers/CreaTriggersFinal3-01.png">
+                                src="public/assets/creativity_triggers/CreaTriggersFinal3-01.png">
                         </div>
                     </div>
                 </div>
@@ -434,7 +429,7 @@
 
     function selectTrigger(trigger) {
         Swal.fire({
-            html: `<img width="80%" class="my-1 px-2" src="assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png">`,
+            html: `<img width="80%" class="my-1 px-2" src="public/assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png">`,
             confirmButtonText: 'Ready!',
             allowEscapeKey: false,
             allowOutsideClick: false,
@@ -451,7 +446,7 @@
             backdrop: 'static',
         });
         $('#triggerImage').prop('src',
-            `assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png`).show();
+            `public/assets/creativity_triggers/CreaTriggersFinal3-${trigger}.png`).show();
         countDownDate = new Date();
         countDownDate.setSeconds(countDownDate.getSeconds() + 30);
         interval = setInterval(function () {

@@ -20,7 +20,10 @@ body {
 }
 
 .user-icon {
-    margin: 20px 5px 0px 25px;
+    margin: 5% 2% 5% 10%;
+    padding: 0px;
+    width: 14%;
+    position: relative;
     color: #173753;
 }
 
@@ -31,9 +34,19 @@ body {
 .points-row {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-right: 20px;
+    padding-right: 0px;
     color: rgb(204, 34, 34);
     font-size: small;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.name-text {
+    margin: auto 0px;
+    padding: 0px;
+    vertical-align: bottom;
+    font-size: large;
 }
 
 .tooltip-inner {
